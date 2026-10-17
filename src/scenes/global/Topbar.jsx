@@ -24,7 +24,7 @@ const Topbar = () => {
       {/* {Search-Bar} */}
       <Box sx={{
         display: "flex",
-        backgroundColor: colors.primary[400],
+        backgroundColor: colors.primary[700],
         borderRadius: "3px",
       }}
       >
