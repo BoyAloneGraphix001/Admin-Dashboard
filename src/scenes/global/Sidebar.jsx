@@ -94,7 +94,7 @@ const Sidebar = () => {
                             justifyContent: "center",
                             alignItems: "center"
                         }}>
-                            <img src={`../../assets/hero.png`} alt="profile-user" width="100px" height="100px" style={{ cursor: "pointer" }} />
+                            <img src={`../../assets/boyalone.jpg`} alt="profile-user" width="100px" height="100px" style={{ cursor: "pointer" }} />
                         </Box>
                         <Box sx={{ textAlign: "center" }}>
                             <Typography variant="h2" color={colors.gray[100]} sx={{ m: "10px 0 0 0", fontWeight: "bold" }}>
