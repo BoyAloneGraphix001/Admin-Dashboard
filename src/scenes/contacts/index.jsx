@@ -1,9 +1,8 @@
-import { Box, Toolbar } from "@mui/material";
-import { DataGrid, GridToolbar } from "@mui/x-data-grid";
+import { Box, useTheme } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataContacts } from "../../data/mockData";
 import Header from "../../components/Header";
-import { useTheme } from "@mui/material"
 
 const Contacts = () => {
     const theme = useTheme();
@@ -23,7 +22,7 @@ const Contacts = () => {
 
     return(
         <Box sx={{ m: "20px" }}>
-            <Header title="CONTATCS" subtitle="List of Contacts for Future Reference" />
+            <Header title="CONTACTS" subtitle="List of Contacts for Future Reference" />
             <Box sx={{ 
                 m: "40px 0 0 0", height: "75vh",
                 "& .MuiDataGrid-root": { border: "none" },
@@ -34,7 +33,7 @@ const Contacts = () => {
                 borderBottom: "none"},
                 "& .MuiDataGrid-virtualScroller": { backgroundColor: colors.primary[700] },
                 "& .MuiDataGrid-footerContainer": { borderTop: "none", backgroundColor: colors.blueAccent[700] },
-                "& .MuiDataGrid-toolbarContainer .MuiButton-text": { color: `${colors.gray[100]}` },
+                "& .MuiDataGrid-toolbar": { color: `${colors.gray[100]} !important` },
                 "& .MuiCheckbox-root": {
                 color: `${colors.greenAccent[200]} !important`},
                 }}>
@@ -42,7 +41,7 @@ const Contacts = () => {
                     checkboxSelection
                     rows={mockDataContacts}
                     columns={columns}
-                    components={{ Toolbar: GridToolbar }}
+                    showToolbar
                 />
             </Box>
         </Box>
