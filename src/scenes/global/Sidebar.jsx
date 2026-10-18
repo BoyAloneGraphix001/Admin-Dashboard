@@ -15,6 +15,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import boyalone from "../../assets/boyalone.jpg"
 
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -77,7 +78,7 @@ const Sidebar = () => {
                                 ml: "15px"
                             }}
                         >
-                        <Typography variant="h3" color={colors.gray[100]}>
+                        <Typography variant="h3" sx={{ color: "#f0f1f4" }} >
                             ADMINS
                         </Typography>
                         <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
@@ -94,7 +95,7 @@ const Sidebar = () => {
                             justifyContent: "center",
                             alignItems: "center"
                         }}>
-                            <img src={`../../assets/boyalone.jpg`} alt="profile-user" width="100px" height="100px" style={{ cursor: "pointer" }} />
+                            <img src={boyalone} alt="profile-user" width="100px" height="100px" style={{ cursor: "pointer", borderRadius: "50%" }} />
                         </Box>
                         <Box sx={{ textAlign: "center" }}>
                             <Typography variant="h2" color={colors.gray[100]} sx={{ m: "10px 0 0 0", fontWeight: "bold" }}>
