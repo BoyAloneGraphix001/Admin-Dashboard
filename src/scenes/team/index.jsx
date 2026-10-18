@@ -13,7 +13,7 @@ const Team = () => {
 
     const columns = [
         { field: "id", headerName: "ID" },
-        { field: "name", headerName: "Name", flex: 1, cellClassName: "name-column-cell"},
+        { field: "name", headerName: "Name", flex: 1, cellClassName: "name-column--cell"},
         { field: "age", headerName: "Age", type: "number", headerAlign: "left", align: "left"},
         { field: "phone", headerName: "Phone Number", flex: 1},
         { field: "email", headerName: "Email", flex: 1},
@@ -32,8 +32,21 @@ const Team = () => {
     return(
         <Box sx={{ m: "20px" }}>
             <Header title="TEAM" subtitle="Managing the team members" />
-            <Box sx={{ m: "40px 0 0 0", height: "75vh",  }}>
+            <Box sx={{ 
+                m: "40px 0 0 0", height: "75vh",
+                "& .MuiDataGrid-root": { border: "none" },
+                "& .MuiDataGrid-cell": { borderBottom: "none" },
+                "& .name-column--cell": { color: colors.greenAccent[300] },
+                "& .MuiDataGrid-columnHeader": {
+                backgroundColor: `${colors.blueAccent[700]} !important`,
+                borderBottom: "none"},
+                "& .MuiDataGrid-virtualScroller": { backgroundColor: colors.primary[700] },
+                "& .MuiDataGrid-footerContainer": { borderTop: "none", backgroundColor: colors.blueAccent[700] },
+                "& .MuiCheckbox-root": {
+                color: `${colors.greenAccent[200]} !important`},
+                }}>
                 <DataGrid 
+                    checkboxSelection
                     rows={mockDataTeam}
                     columns={columns}
                 />
