@@ -15,7 +15,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import boyalone from "../../assets/boyalone.jpg"
+import Default from "../../assets/Default.jpg"
 
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -95,14 +95,14 @@ const Sidebar = () => {
                             justifyContent: "center",
                             alignItems: "center"
                         }}>
-                            <img src={boyalone} alt="profile-user" width="100px" height="100px" style={{ cursor: "pointer", borderRadius: "50%" }} />
+                            <img src={Default} alt="profile-user" width="100px" height="100px" style={{ cursor: "pointer", borderRadius: "50%" }} />
                         </Box>
                         <Box sx={{ textAlign: "center" }}>
                             <Typography variant="h2" color={colors.gray[100]} sx={{ m: "10px 0 0 0", fontWeight: "bold" }}>
-                                BoyAlone
+                                Olasubomi
                             </Typography>
                             <Typography variant="h5" color={colors.greenAccent[500]}>
-                                VP Fancy Admin
+                                || VP Admin ||
                             </Typography>
                         </Box>
                     </Box>
