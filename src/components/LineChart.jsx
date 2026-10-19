@@ -47,8 +47,8 @@ const LineChart = ({ isDashboard = false }) => {
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
         curve="catmullRom"
-        axisBottom={{ legend: 'transportation', legendOffset: 36 }}
-        axisLeft={{ legend: 'count', legendOffset: -40 }}
+        axisBottom={{ legend: isDashboard ? undefined : "transportation", legendOffset: 36 }}
+        axisLeft={{ legend: isDashboard ? undefined : "count", legendOffset: -40 }}
         enableGridX={false}
         enableGridY={false}
         pointSize={10}
