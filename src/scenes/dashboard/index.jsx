@@ -129,7 +129,7 @@ const Dashboard = () => {
                             </Box>
                         ))}
                     </Box>
-                </Box>
+                
             
             {/* ROW 3  */}
             <Box sx={{ 
@@ -178,6 +178,7 @@ const Dashboard = () => {
                     <GeographyChart isDashboard={true} />
                 </Box>
             </Box>
+        </Box>
                 
         </Box>
     )
