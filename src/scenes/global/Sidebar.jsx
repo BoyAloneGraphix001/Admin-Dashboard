@@ -78,7 +78,7 @@ const Sidebar = () => {
                                 ml: "15px"
                             }}
                         >
-                        <Typography variant="h3" sx={{ color: "#f0f1f4" }} >
+                        <Typography variant="h3" sx={{ color: colors.primary[100] }} >
                             ADMINS
                         </Typography>
                         <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
